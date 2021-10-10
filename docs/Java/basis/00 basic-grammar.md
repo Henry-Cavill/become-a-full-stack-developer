@@ -150,6 +150,8 @@ Java 的数据类型分为两大类：
 | 布尔类型 | boolean | 1 个字节 | true，false |  
 
 注：
+- 1 byte = 8 bit(位),其中每一位可以存放0或者1，所以1byte可以表示为 2^8-1（因为存储形式为补码所以第一位为符号位，所以只能填充0）
+
 - Java 中整数类型的默认类型是 int、浮点类型的默认类型是 double 。
 
 - boolean 只有两个值：true、false，可以使用 1 bit 来存储，但是具体大小没有明确规定。JVM 会在编译时期将 boolean 类型的数据转换为 int，使用 1 来表示 true，0 表示 false。JVM 支持 boolean 数组，但是是通过读写 byte 数组来实现的。  
